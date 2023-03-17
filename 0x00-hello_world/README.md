@@ -36,6 +36,12 @@
 
 	* You are not allowed to use the function puts
 
+100-intel: This script generates the assembly code (Intel syntax) of a C code and save it in an output file.
+
+	* The C file name will be saved in the variable $CFILE.
+
+	* The output file should be named the same as the C file, but with the extension .s instead of .c
+
 	* Your program should return 0
 	
 	* Your program should compile without warning when using the -Wall gcc option
