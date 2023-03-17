@@ -19,7 +19,7 @@ int main(void)
 	if (lst_number < 6 && lst_number != 0)
 		printf("and is less than 6 and not 0\n");
 	else if (lst_number > 5)
-		printf("ans is greater than 5\n");
+		printf("and is greater than 5\n");
 	else
 		printf("and is 0\n");
 	return (0);
