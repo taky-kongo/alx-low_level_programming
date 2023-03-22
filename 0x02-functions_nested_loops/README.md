@@ -27,3 +27,8 @@
 	* Returns -1 and prints - if n is less than zero
 
 6-abs.c: This program is a function that computes the absolute value of an integer.
+
+7-print_last_digit.c: The program is a function that prints the last digit of a number.
+
+	* Prototype: int print_last_digit(int);
+	* Returns the value of the last digit
