@@ -32,3 +32,5 @@
 
 	* Prototype: int print_last_digit(int);
 	* Returns the value of the last digit
+
+10-add.c: This program is a funtion that adds two integers and returns the result.
