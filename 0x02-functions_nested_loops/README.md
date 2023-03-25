@@ -38,3 +38,5 @@
 	* Prototype: void times_table(void);
 
 10-add.c: This program is a funtion that adds two integers and returns the result.
+
+101-natural.c: This program computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line.
