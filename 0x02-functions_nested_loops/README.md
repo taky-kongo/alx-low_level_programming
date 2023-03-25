@@ -33,4 +33,8 @@
 	* Prototype: int print_last_digit(int);
 	* Returns the value of the last digit
 
+9-times_table: This program is a function that prints the 9 times table, starting with 0.
+
+	* Prototype: void times_table(void);
+
 10-add.c: This program is a funtion that adds two integers and returns the result.
