@@ -17,3 +17,11 @@
 4-print_rev.c: This program is a function that prints a string, in reverse, followed by a new line.
 
 	* Prototype: void print_rev(char *s);
+
+5-rev_string.c: This program is a function that reverses a string.
+
+	* Prototype: void rev_string(char *s);
+
+6-puts2.c: This program is a function that prints every other character of a string, starting with the first character, followed by a new line.
+
+	* Prototype: void puts2(char *str);
