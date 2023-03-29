@@ -11,3 +11,5 @@ This repository is intended for use in learning ALX C programming.
 0x04-more_functions_nested_loops: We deepen our knowledge of the functions.
 
 0x05-pointers_arrays_strings: In this project we see arrays, strings and pointers.
+
+0x06-pointers_arrays_strings: In this project, we see more arrays, strings and pointers.
