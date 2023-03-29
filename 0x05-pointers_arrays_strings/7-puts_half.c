@@ -28,8 +28,8 @@ void puts_half(char *str)
 	}
 	else
 	{
-		n = (i + 1) / 2;
-		str = str - n;
+		n = i / 2;
+		str = str - (n + 1);
 		for (j = n; j < i; j++)
 		{
 			_putchar(*str);
