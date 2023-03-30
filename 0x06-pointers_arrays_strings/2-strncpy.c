@@ -23,38 +23,18 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		j++;
 	}
-	if (j <= i)
+	if (n <= j)
 	{
-		if (n <= j)
+		for (k = 0; k < n; k++)
 		{
-			for (k = 0; k < n; k++)
-			{
-				dest[k] = src[k];
-			}
-		}
-		else
-		{
-			for (k = 0; k < i; k++)
-			{
-				dest[k] = src[k];
-			}
+			dest[k] = src[k];
 		}
 	}
 	else
 	{
-		if (n <= i)
+		for (k = 0; k < i; k++)
 		{
-			for (k = 0; k < n; k++)
-			{
-				dest[k] = src[k];
-			}
-		}
-		else
-		{
-			for (k = 0; k < i; k++)
-			{
-				dest[k] = src[k];
-			}
+			dest[k] = src[k];
 		}
 	}
 	dest[i] = '\0';
