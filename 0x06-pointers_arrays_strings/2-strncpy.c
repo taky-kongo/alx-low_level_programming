@@ -29,15 +29,17 @@ char *_strncpy(char *dest, char *src, int n)
 		{
 			dest[k] = src[k];
 		}
-		dest[k] = '\0';
 	}
 	else
 	{
-		for (k = 0; k < i; k++)
+		for (k = 0; k < j; k++)
 		{
 			dest[k] = src[k];
 		}
-		dest[i] = '\0';
+		for (k = j; k < n; k++)
+		{
+			dest[k] = '\0';
+		}
 	}
 	dest[i] = '\0';
 	return (dest);
