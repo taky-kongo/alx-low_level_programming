@@ -12,26 +12,17 @@ char *_strcat(char *dest, char *src)
 {
 	int i = 0;
 	int j = 0;
-	int k, l;
 
-	while (*dest != '\0')
+	while (*(dest + i) != '\0')
 	{
 		i++;
-		dest++;
 	}
-	i--;
 	while (*(src + j) != '\0')
 	{
+		*(dest + i) = *(src + j);
 		j++;
+		i++;
 	}
-	j++;
-	l = i + j;
-	for (k = i; k < l; k++)
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
-	*(dest + k) = '\0';
+	*(dest + i) = '\0';
 	return (dest);
 }
