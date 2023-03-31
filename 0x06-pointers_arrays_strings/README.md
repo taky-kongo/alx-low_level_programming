@@ -21,3 +21,12 @@
 
 	* Prototype: int _strcmp(char *s1, char *s2);
 	* Your function should work exactly like strcmp
+
+4-rev_array.c: This program is a function that reverses the content of an array of integers.
+
+	* Prototype: void reverse_array(int *a, int n);
+	* Where n is the number of elements of the array
+
+5-string_toupper.c: This program is a function that changes all lowercase letters of a string to uppercase.
+
+	* Prototype: char *string_toupper(char *);
