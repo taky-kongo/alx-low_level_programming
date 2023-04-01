@@ -7,11 +7,17 @@
  */
 void print_number(int n)
 {
-	int l, k, m, o;
+	int l, k, m, o, p, q;
 
+	if (n >= 1000000)
+		_putchar(n / 1000000 + '0');
+	q = n % 1000000;
+	if (n >= 100000)
+		_putchar(q / 100000 + '0');
+	p = q % 100000;
 	if (n >= 10000)
-		_putchar(n / 10000 + '0');
-	o = n % 10000;
+		_putchar(p / 10000 + '0');
+	o = p % 10000;
 	if (n >= 1000)	
 		_putchar(o / 1000 + '0');
 	l = o % 1000;
@@ -26,9 +32,15 @@ void print_number(int n)
 	else
 	{
 		_putchar('-');
+		if (n <= -1000000)
+			_putchar(-n / 1000000 + '0');
+		q = -n % 1000000;
+		if (n <= -100000)
+			_putchar(q / 100000 + '0');
+		p = q % 100000;
 		if (n <= -10000)
-			_putchar(-n / 10000 + '0');
-		o = -n % 10000;
+			_putchar(p / 10000 + '0');
+		o = p % 10000;
 		if (n <= -1000)
 			_putchar(o / 1000 + '0');
 		l = o % 1000;
