@@ -9,19 +9,20 @@
  */
 char *rot13(char *srt)
 {
-	char alpha_input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char alpha_output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char a_input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char a_ouput[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	int i, j;
 
 	for (i = 0; srt[i] != '\0'; i++)
 	{
-		for (j = 0; alpha_input[j] != '\0'; j++)
+		for (j = 0; a_input[j] != '\0'; j++)
 		{
-			if (srt[i] == alpha_input[j])
+			if (srt[i] == a_input[j])
 			{
-				srt[i] = alpha_output[j];
+				srt[i] = a_ouput[j];
 			}
 		}
 	}
+	srt[i] = '\0';
 	return (srt);
 }
