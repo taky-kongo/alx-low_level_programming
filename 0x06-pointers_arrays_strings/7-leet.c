@@ -9,23 +9,13 @@
  */
 char *leet(char *s)
 {
-	int i = 0;
-	int l = 0;
 	int j, k;
 	char letter[] = "aAeEoOtTlL";
 	char number[] = "4433007711";
 
-	while (s[i] != '\0')
+	for (j = 0; s[j] != '\0'; j++)
 	{
-		i++;
-	}
-	while (letter[l] != '\0')
-	{
-		l++;
-	}
-	for (j = 0; j < i; j++)
-	{
-		for (k = 0; k < l; k++)
+		for (k = 0; letter[k] != '\0'; k++)
 		{
 			if (s[j] == letter[k])
 			{
