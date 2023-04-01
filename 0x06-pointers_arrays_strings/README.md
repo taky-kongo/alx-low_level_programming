@@ -31,7 +31,7 @@
 
 	* Prototype: char *string_toupper(char *);
 
-6-leet.c: This program is a function that encodes a string into 1337.
+7-leet.c: This program is a function that encodes a string into 1337.
 
 	* Letters a and A should be replaced by 4
 	* Letters e and E should be replaced by 3
@@ -40,6 +40,14 @@
 	* Letters l and L should be replaced by 1
 	* Prototype: char *leet(char *);
 	* You can only use one if in your code
+	* You can only use two loops in your code
+	* You are not allowed to use switch
+	* You are not allowed to use any ternary operation
+
+100-rot13.c: This program is a function that encodes a string using rot13.
+
+	* Prototype: char *rot13(char *);
+	* You can only use if statement once in your code
 	* You can only use two loops in your code
 	* You are not allowed to use switch
 	* You are not allowed to use any ternary operation
