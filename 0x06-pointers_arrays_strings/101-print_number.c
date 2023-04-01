@@ -7,11 +7,14 @@
  */
 void print_number(int n)
 {
-	int l, k, m;
+	int l, k, m, o;
 
+	if (n >= 10000)
+		_putchar(n / 10000 + '0');
+	o = n % 10000;
 	if (n >= 1000)	
-		_putchar(n / 1000 + '0');
-	l = n % 1000;
+		_putchar(o / 1000 + '0');
+	l = o % 1000;
 	if (n >= 100)	
 		_putchar(l / 100 + '0');
 	k = l % 100;
