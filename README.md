@@ -13,3 +13,5 @@ This repository is intended for use in learning ALX C programming.
 0x05-pointers_arrays_strings: In this project we see arrays, strings and pointers.
 
 0x06-pointers_arrays_strings: In this project, we see more arrays, strings and pointers.
+
+0x07-pointers_arrays_strings: In this project, we see pointers to pointers, two-dimensional arrays and how to manipulate them and find their address.
