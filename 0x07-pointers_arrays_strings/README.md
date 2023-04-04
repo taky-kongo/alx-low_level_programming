@@ -17,3 +17,7 @@
 7-print_chessboard.c: This program is a function that prints the chessboard.
 
 	* Prototype: void print_chessboard(char (*a)[8]);
+
+100-set_string.c: This program is a function that sets the value of a pointer to a char.
+
+	* Prototype: void set_string(char **s, char *to);
