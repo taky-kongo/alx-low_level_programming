@@ -17,8 +17,6 @@ char *_strchr(char *s, char c)
 	{
 		j++;
 	}
-	if (c == '\0')
-		*s = '\0';
 	if (*s != '\0')
 	{
 		for (k = 0; k < j; k++)
