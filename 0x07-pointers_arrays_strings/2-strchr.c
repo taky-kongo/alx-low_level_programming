@@ -24,12 +24,5 @@ char *_strchr(char *s, char c)
 			s++;
 		}
 	}
-	else
-	{
-		for (k = 0; s[k] != '\0'; k++)
-		{
-			s++;
-		}
-	}
 	return (s);
 }
