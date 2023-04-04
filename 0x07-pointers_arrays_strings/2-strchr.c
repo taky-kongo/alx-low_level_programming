@@ -13,8 +13,14 @@ char *_strchr(char *s, char c)
 	int j = 0;
 	int k;
 
-	while (s[j] != c)
+	while (s[j] != '\0')
 	{
+		if (s[j] != c)
+		{
+			s++;
+		}
+		else
+			break;
 		j++;
 	}
 	if (*s != '\0')
