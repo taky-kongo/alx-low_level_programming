@@ -25,6 +25,11 @@ char *_strchr(char *s, char c)
 		}
 	}
 	else
-		return ('\0');
+	{
+		for (k = 0; s[k] != '\0'; k++)
+		{
+			s++;
+		}
+	}
 	return (s);
 }
