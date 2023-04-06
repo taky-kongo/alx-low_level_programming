@@ -20,3 +20,7 @@
 
 	* Prototype: int _pow_recursion(int x, int y);
 	* If y is lower than 0, the function should return -1
+
+6-is_prime_number.c: This program is a function that returns 1 if the input integer is a prime number, otherwise return 0.
+
+	* Prototype: int is_prime_number(int n);
