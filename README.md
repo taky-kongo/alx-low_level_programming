@@ -17,3 +17,5 @@ This repository is intended for use in learning ALX C programming.
 0x07-pointers_arrays_strings: In this project, we see pointers to pointers, two-dimensional arrays and how to manipulate them and find their address.
 
 0x08-recursion: In this project, we have seen recursion and how to implement it.
+
+0x09-static_libraries: In this project we see the static libraries. We see their use and their importance.
