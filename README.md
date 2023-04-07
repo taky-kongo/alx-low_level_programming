@@ -19,3 +19,5 @@ This repository is intended for use in learning ALX C programming.
 0x08-recursion: In this project, we have seen recursion and how to implement it.
 
 0x09-static_libraries: In this project we see the static libraries. We see their use and their importance.
+
+0x0A-argc_argv: In this project we have seen the arguments of the main function and how to use them. Also we saw how to use __attribute__((unused)) or (void) to compile functions with unused variables or parameters.
