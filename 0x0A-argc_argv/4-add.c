@@ -19,19 +19,14 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (*argv[i] >= 'a' && *argv[i] <= 'z')
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else if (*argv[i] >= 'A' && *argv[i] <= 'Z')
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else if (argc > 2)
+		if (*argv[i] >= '0' && *argv[i] <= '9')
 		{
 			add = add + atoi(argv[i]);
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
 		}
 	}
 	if (argc > 2)
