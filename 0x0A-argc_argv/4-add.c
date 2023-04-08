@@ -5,6 +5,7 @@
  * main - adds positive numbers.
  *
  * @argc: The number of command line arguments
+ * @argv: The array
  *
  * Return: 0 (success) or 1.
  */
