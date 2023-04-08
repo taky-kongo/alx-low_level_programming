@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	}
 	if (argc == 1)
 	{
-		printf("%d\n");
+		printf("%d\n", 0);
 	}
 	if (add > 0)
 		printf("%d\n", add);
