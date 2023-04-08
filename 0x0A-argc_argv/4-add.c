@@ -22,10 +22,16 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
+			add = 0;
 			printf("Error\n");
 			return (1);
 		}
 	}
-	printf("%d\n", add);
+	if (argc == 1)
+	{
+		printf("%d\n");
+	}
+	if (add > 0)
+		printf("%d\n", add);
 	return (0);
 }
