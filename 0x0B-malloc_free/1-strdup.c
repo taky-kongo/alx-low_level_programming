@@ -20,11 +20,11 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	i++;
 	while (str[i] != '\0')
 	{
 		i++;
 	}
+	i++;
 	s = malloc(sizeof(char) * i);
 	if (s == NULL)
 	{
