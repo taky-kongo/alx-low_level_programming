@@ -20,6 +20,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	i++;
 	while (str[i] != '\0')
 	{
 		i++;
