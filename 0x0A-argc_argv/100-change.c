@@ -28,21 +28,24 @@ int main(int argc, char **argv)
 	{
 		printf("0\n");
 	}
-	while (cents != sum)
+	if (cents > 0)
 	{
-		if (coins[i] > cents)
+		while (cents != sum)
 		{
-			i++;
+			if (coins[i] > cents)
+			{
+				i++;
+			}
+			if (sum > cents)
+			{
+				sum = sum - coins[i];
+				i++;
+				count--;
+			}
+			sum = sum + coins[i];
+			count++;
 		}
-		if (sum > cents)
-		{
-			sum = sum - coins[i];
-			i++;
-			count--;
-		}
-		sum = sum + coins[i];
-		count++;
+		printf("%d\n", count);
 	}
-	printf("%d\n", count);
 	return (0);
 }
