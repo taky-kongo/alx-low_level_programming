@@ -16,22 +16,13 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (*argv[i] >= '0' && *argv[i] <= '9')
+		add = add + atoi(argv[i]);
+		if (*argv[i] >= '0' || *argv[i] <= '9')
 		{
-			add = add + atoi(argv[i]);
-		}
-		else
-		{
-			add = 0;
 			printf("Error\n");
 			return (1);
 		}
 	}
-	if (argc == 1)
-	{
-		printf("%d\n", 0);
-	}
-	if (add > 0)
-		printf("%d\n", add);
+	printf("%d\n", add);
 	return (0);
 }
