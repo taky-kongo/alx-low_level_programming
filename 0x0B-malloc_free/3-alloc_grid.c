@@ -34,5 +34,9 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return (tab);
+	for (i = 0; i < height; i++)
+	{
+		free(tab[i]);
+	}
 	free(tab);
 }
