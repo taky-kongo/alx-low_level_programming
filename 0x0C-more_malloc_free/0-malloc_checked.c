@@ -10,13 +10,11 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *check;
-
-	check = malloc(sizeof(b) + b);
-	if (check == NULL)
+	malloc(sizeof(b) + b);
+	if (malloc(sizeof(b) + b) == NULL)
 	{
 		exit(98);
 	}
-	return (check);
-	free(check);
+	return (malloc(sizeof(b) + b));
+	free(malloc(sizeof(b) + b));
 }
