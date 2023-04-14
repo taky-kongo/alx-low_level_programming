@@ -13,7 +13,7 @@
  */
 int *array_range(int min, int max)
 {
-	int i;
+	int i = 0;
 	int *tab;
 
 	if (min > max)
@@ -21,6 +21,8 @@ int *array_range(int min, int max)
 	tab = malloc(sizeof(int) * (max - min + 1));
 	if (tab == 0)
 		return (NULL);
+	if (max == min)
+		tab[0] = max;
 	for (i = min; i < max + 1; i++)
 	{
 		tab[i] = min;
