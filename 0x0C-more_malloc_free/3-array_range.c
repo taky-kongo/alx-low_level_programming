@@ -23,7 +23,7 @@ int *array_range(int min, int max)
 		return (NULL);
 	if (max == min)
 		tab[0] = max;
-	for (i = min; i < max + 1; i++)
+	for (i = 0; i < max; i++)
 	{
 		tab[i] = min;
 		min++;
