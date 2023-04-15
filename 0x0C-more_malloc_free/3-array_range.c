@@ -18,15 +18,13 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	tab = malloc(sizeof(int) * (max - min + 1));
+	tab = malloc(sizeof(int) * (max - min));
 	if (tab == 0)
 		return (NULL);
 	i = 0;
-	while (tab[i] < (max - min + 1) && min <= max)
+	for (; i < max - min; i++, min++)
 	{
 		tab[i] = min;
-		min++;
-		i++;
 	}
 	return (tab);
 	free(tab);
