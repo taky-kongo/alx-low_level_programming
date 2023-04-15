@@ -5,7 +5,7 @@
  * main -  multiplies two positive numbers.
  *
  * @argc: the number of argument
- * @agrv: the array of argument
+ * @argv: the array of argument
  *
  * Return: Always 0.
  */
