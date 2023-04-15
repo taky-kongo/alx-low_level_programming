@@ -13,7 +13,7 @@
  */
 int *array_range(int min, int max)
 {
-	int i;
+	int i, j;
 	int *tab;
 
 	if (min > max)
@@ -22,9 +22,9 @@ int *array_range(int min, int max)
 	if (tab == 0)
 		return (NULL);
 	i = 0;
-	for (; i < max - min + 1; i++, min++)
+	for (j = min; i < max - min + 1; i++, j++)
 	{
-		tab[i] = min;
+		tab[i] = j;
 	}
 	return (tab);
 	free(tab);
