@@ -28,3 +28,5 @@ We study, valgrind, malloc and free.
 0x0C-more_malloc_free: In this project, we see the dynamic speeches. How to allocate memory with the malloc and calloc function. Also, we see the realloc function, the free function and the exit function.
 
 0x0D-preprocessor: In this project, we see the preprocessors, macros and dynamic links
+
+0x0E-structures_typedef: In this project, we see struct and typedef and how to use them.
