@@ -30,3 +30,5 @@ We study, valgrind, malloc and free.
 0x0D-preprocessor: In this project, we see the preprocessors, macros and dynamic links
 
 0x0E-structures_typedef: In this project, we see struct and typedef and how to use them.
+
+0x10-variadic_functions: In this project, we see the variadic functions and the constants and how to use va_start, va_arg and va_end macros.
