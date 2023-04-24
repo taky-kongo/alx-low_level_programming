@@ -39,7 +39,8 @@ void print_all(const char *format, ...)
 				printf("%f", f);
 				break;
 		}
-		printf(", ");
+		if (*format)
+			printf(", ");
 	}
 	printf("\n");
 	va_end(args);
