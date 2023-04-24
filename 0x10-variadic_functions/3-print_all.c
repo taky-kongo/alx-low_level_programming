@@ -16,8 +16,10 @@ void print_all(const char * const format, ...)
 	float f;
 
 	va_start(args, format);
-	while (*format) {
-		switch (*format++) {
+	while (*format)
+	{
+		switch (*format++)
+		{
 			case 's':
 				s = va_arg(args, char *);
 				if (s == NULL)
@@ -38,6 +40,5 @@ void print_all(const char * const format, ...)
 				break;
 		}
 	}
-
 	va_end(args);
 }
