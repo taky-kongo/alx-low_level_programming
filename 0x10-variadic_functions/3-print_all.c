@@ -8,7 +8,7 @@
  *
  * @format: a list of types of arguments passed to the function
  */
-void print_all(const char * const format, ...)
+void print_all(const char *format, ...)
 {
 	va_list args;
 	char c, *s;
@@ -39,6 +39,8 @@ void print_all(const char * const format, ...)
 				printf("%f", f);
 				break;
 		}
+		printf(", ");
 	}
+	printf("\n");
 	va_end(args);
 }
