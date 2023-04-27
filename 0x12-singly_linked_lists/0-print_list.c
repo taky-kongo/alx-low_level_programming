@@ -15,7 +15,6 @@ size_t print_list(const list_t *h)
 {
 	unsigned int c = 0;
 
-	h = malloc(sizeof(*h));
 	if (h == NULL)
 		return (1);
 	while (h != NULL)
