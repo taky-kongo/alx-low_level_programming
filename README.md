@@ -37,3 +37,7 @@ We study, valgrind, malloc and free.
 	* Where does a function pointer point to in the virtual memory
 
 0x10-variadic_functions: In this project, we see the variadic functions and the constants and how to use va_start, va_arg and va_end macros.
+
+0x12-singly_linked_lists: In this project, we see: 
+	* When and why using linked lists vs arrays
+	* How to build and use linked lists
