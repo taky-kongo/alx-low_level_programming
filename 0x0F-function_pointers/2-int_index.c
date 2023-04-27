@@ -14,7 +14,7 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i, b;
+	int i, b, c = 0;
 
 	if (size <= 0)
 		return (-1);
@@ -25,8 +25,14 @@ int int_index(int *array, int size, int (*cmp)(int))
 		b = ((*cmp)(array[i]));
 		if (b != 0)
 		{
+			c = i;
+			break;
+		}
+		if (b == 0 && i == (size - 1))
+		{
+			c = -1;
 			break;
 		}
 	}
-	return (i);
+	return (c);
 }
