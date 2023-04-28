@@ -1,13 +1,11 @@
 #include <stdio.h>
+#include "lists.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * first - a function that prints before the main function is executed.
  */
-int main(void)
+void first(void)
 {
-	printf("(A tortoise, having pretty good sense of a hare's nature,
-		challenges one to a race.)\n");
-	return (0);
+	printf("You're beat! and yet, you must allow,\n
+			I bore my house upon my back!\n");
 }
