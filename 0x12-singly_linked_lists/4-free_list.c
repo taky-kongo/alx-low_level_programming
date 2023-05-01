@@ -10,11 +10,15 @@
  */
 void free_list(list_t *head)
 {
+	list_t *clear;
+
 	if (head == NULL)
 		return;
-	while (head->next != NULL)
-	{
-		free(head);
-		head = NULL;
-	}
+
+	clear = malloc(sizeof(list_t));
+	if (clear == NULL)
+		return;
+	clear = head->next;
+	free(head);
+	head = NULL;
 }
