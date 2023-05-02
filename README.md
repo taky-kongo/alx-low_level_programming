@@ -41,3 +41,7 @@ We study, valgrind, malloc and free.
 0x12-singly_linked_lists: In this project, we see: 
 	* When and why using linked lists vs arrays
 	* How to build and use linked lists
+
+0x13-more_singly_linked_lists: In this project, we see: 
+	* How to use linked lists
+	* Start to look for the right source of information without too much help
