@@ -10,6 +10,14 @@ void free_list(list_t *head)
 {
 	list_t *clear;
 
+	if (head == NULL)
+		return;
+	if (head->next == NULL)
+	{
+		free(head);
+		head = NULL;
+		return;
+	}
 	while (head != NULL)
 	{
 		clear = head;
