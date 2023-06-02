@@ -15,33 +15,3 @@ This repository is intended for use in learning ALX C programming.
 0x06-pointers_arrays_strings: In this project, we see more arrays, strings and pointers.
 
 0x07-pointers_arrays_strings: In this project, we see pointers to pointers, two-dimensional arrays and how to manipulate them and find their address.
-
-0x08-recursion: In this project, we have seen recursion and how to implement it.
-
-0x09-static_libraries: In this project we see the static libraries. We see their use and their importance.
-
-0x0A-argc_argv: In this project we have seen the arguments of the main function and how to use them. Also we saw how to use __attribute__((unused)) or (void) to compile functions with unused variables or parameters.
-
-0x0B-malloc_free: In this project, we see the dynamic speeches. The difference between automatic and dynamic speech.
-We study, valgrind, malloc and free.
-
-0x0C-more_malloc_free: In this project, we see the dynamic speeches. How to allocate memory with the malloc and calloc function. Also, we see the realloc function, the free function and the exit function.
-
-0x0D-preprocessor: In this project, we see the preprocessors, macros and dynamic links
-
-0x0E-structures_typedef: In this project, we see struct and typedef and how to use them.
-
-0x0F-function_pointers: In this projects
-	* What are function pointers and how to use them
-	* What does a function pointer exactly hold
-	* Where does a function pointer point to in the virtual memory
-
-0x10-variadic_functions: In this project, we see the variadic functions and the constants and how to use va_start, va_arg and va_end macros.
-
-0x12-singly_linked_lists: In this project, we see: 
-	* When and why using linked lists vs arrays
-	* How to build and use linked lists
-
-0x13-more_singly_linked_lists: In this project, we see: 
-	* How to use linked lists
-	* Start to look for the right source of information without too much help
