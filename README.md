@@ -15,3 +15,7 @@ This repository is intended for use in learning ALX C programming.
 0x06-pointers_arrays_strings: In this project, we see more arrays, strings and pointers.
 
 0x07-pointers_arrays_strings: In this project, we see pointers to pointers, two-dimensional arrays and how to manipulate them and find their address.
+
+0x09-static_libraries: In this project, we see:
+	* a static library, how does it work, how to create one, and how to use it
+	* Basic usage of ar, ranlib, nm
