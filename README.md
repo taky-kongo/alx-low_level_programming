@@ -19,3 +19,9 @@ This repository is intended for use in learning ALX C programming.
 0x09-static_libraries: In this project, we see:
 	* a static library, how does it work, how to create one, and how to use it
 	* Basic usage of ar, ranlib, nm
+
+0x0B-malloc_free: In this project, we see:
+	* The difference between automatic and dynamic allocation
+	* What is malloc and free and how to use them
+	* Why and when use malloc
+	* How to use valgrind to check for memory leak
