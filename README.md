@@ -20,6 +20,11 @@ This repository is intended for use in learning ALX C programming.
 	* a static library, how does it work, how to create one, and how to use it
 	* Basic usage of ar, ranlib, nm
 
+0x0A-argc_argv: In this project, wee see:
+	* How to use arguments passed to your program
+	* What are two prototypes of main that you know of, and in which case do you use one or the other
+	* How to use __attribute__((unused)) or (void) to compile functions with unused variables or parameters
+
 0x0B-malloc_free: In this project, we see:
 	* The difference between automatic and dynamic allocation
 	* What is malloc and free and how to use them
