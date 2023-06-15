@@ -28,6 +28,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = i2;
 	size = i1 + n;
 	new_str = malloc(sizeof(char) * size + 1);
+	if (new_str == NULL)
+		return (NULL);
 
 	for (i = 0; i < i1; i++)
 	{
