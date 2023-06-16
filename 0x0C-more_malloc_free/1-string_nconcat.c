@@ -16,18 +16,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i1 = 0, i2 = 0, j = 0;
 	unsigned int i, size;
 
-	while (s1[i1] != '\0')
-		i1++;
-	while (s2[i2] != '\0')
-		i2++;
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+	while (s1[i1] != '\0')
+		i1++;
+	while (s2[i2] != '\0')
+		i2++;
 	if (n >= i2)
 		n = i2;
 	size = i1 + n;
-	new_str = malloc((sizeof(char) * size) + 1);
+	new_str = malloc(sizeof(char) * size + 1);
 	if (new_str == NULL)
 		return (NULL);
 
