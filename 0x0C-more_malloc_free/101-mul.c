@@ -11,15 +11,21 @@
  */
 int main(int argc, char **argv)
 {
-	int mul, num1, num2;
+	int num1, num2;
+	int *mul;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	mul = atoi(argv[1]) * atoi(argv[2]);
+	mul = malloc(sizeof(*mul));
+	if (mul == NULL)
+		return (0);
 
-	printf("%d\n", mul);
+	*mul = (atoi(argv[1]) * atoi(argv[2]));
+	printf("%d\n", mul[0]);
+
+	free(mul);
 	return (0);
 }
