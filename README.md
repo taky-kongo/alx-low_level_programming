@@ -48,3 +48,8 @@ This repository is intended for use in learning ALX C programming.
 0x0E-structures_typedef: In this project, we see:
 	* What are structures, when, why and how to use them
 	* How to use typedef
+
+0x0F-function_pointers: In this project, we see:
+	* What are function pointers and how to use them
+	* What does a function pointer exactly hold
+	* Where does a function pointer point to in the virtual memory
