@@ -10,18 +10,32 @@
  */
 int main(int argc, char **argv)
 {
-	int num1, num2;
+	int num1, num2, cal;
 	char *operator;
+	int (*calcul)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		return (98);
 	}
-	num1 = atoi(argv[2]);
-	operator = argv[3];
-	num2 = atoi(argv[4]);
+	num1 = atoi(argv[1]);
+	operator = argv[2];
+	num2 = atoi(argv[3]);
 
-	(*get_op_func(operator))(num1, num2);
+	calcul = get_op_func(operator);
+	if (calcul == NULL)
+	{
+		printf("Error\n");
+		return (99);
+	}
+	if ((*operator == '/' || '%') && (num2 == 0))
+	{
+		printf("Error\n");
+		return (100);
+	}
+
+	cal = calcul(num1, num2);
+	printf("%d\n", cal);
 	return (0);
 }
