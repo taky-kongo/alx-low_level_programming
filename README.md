@@ -46,10 +46,18 @@ This repository is intended for use in learning ALX C programming.
 	* How to include guard your header files
 
 0x0E-structures_typedef: In this project, we see:
+	
 	* What are structures, when, why and how to use them
 	* How to use typedef
 
 0x0F-function_pointers: In this project, we see:
+	
 	* What are function pointers and how to use them
 	* What does a function pointer exactly hold
 	* Where does a function pointer point to in the virtual memory
+
+0x10-variadic_functions: In this project, we see:
+
+	* What are variadic functions
+	* How to use va_start, va_arg and va_end macros
+	* Why and how to use the const type qualifier
