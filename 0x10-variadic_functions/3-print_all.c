@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	int num_args = strlen(format);
 
-	if (format == NULL)
+	if (num_args == 0)
 		break;
 	va_start(args, format);
 	while (i < num_args)
