@@ -13,6 +13,8 @@ void print_all(const char * const format, ...)
 	va_list args;
 	int num_args = strlen(format);
 
+	if (format == NULL)
+		break;
 	va_start(args, format);
 	while (i < num_args)
 	{
@@ -45,7 +47,8 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
-		if ((i != num_args - 1) && ((format[i] == 's') || (format[i] == 'c') || (format[i] == 'f') || (format[i] == 'i')))
+		if ((i != num_args - 1) && ((format[i] == 's') || 
+		(format[i] == 'c') || (format[i] == 'f') || (format[i] == 'i')))
 			printf(", ");
 		i++;
 	}
