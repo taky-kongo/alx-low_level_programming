@@ -13,8 +13,8 @@ void print_all(const char * const format, ...)
 	va_list args;
 	int num_args = strlen(format);
 
-	if (num_args == 0)
-		break;
+	if (num_args != 0)
+	{
 	va_start(args, format);
 	while (i < num_args)
 	{
@@ -54,4 +54,5 @@ void print_all(const char * const format, ...)
 	}
 	va_end(args);
 	printf("\n");
+	}
 }
