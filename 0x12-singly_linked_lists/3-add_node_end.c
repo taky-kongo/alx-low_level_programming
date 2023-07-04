@@ -7,6 +7,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *tmp;
 	list_t *ptr;
+
 	char *new_str;
 	unsigned int count = 0;
 
@@ -27,11 +28,11 @@ list_t *add_node_end(list_t **head, const char *str)
 	tmp->len = count;
 	tmp->next = NULL;
 
-	while (**head->next != NULL)
+	while (ptr->next != NULL)
 	{
-		**head = **head->next;
+		ptr = ptr->next;
 	}
-	**head->next = tmp;
+	ptr->next = tmp;
 
 	return (ptr);
 }
