@@ -28,6 +28,3 @@
 
 	* Prototype: void free_list(list_t *head);
 
-4-free_listint.c: This is a function that frees a listint_t list.
-
-	* Prototype: void free_listint(listint_t *head);
