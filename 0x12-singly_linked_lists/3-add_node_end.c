@@ -2,41 +2,41 @@
 
 /**
  * add_node_end - adds a new node at the end of a list_t list.
- * @head: the list that to receive
+ * @head: the linked list to enter
  * @str: the string to add
  *
- * Return: the address of the new element, or NULL if it failed
+ * Return:the address of the new element, or NULL if it failed
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *tmp;
-	list_t *ptr;
-
+	list_t *new_node, *ptr;
 	char *new_str;
-	unsigned int count = 0;
+	int len;
 
-	ptr = *head;
-	tmp = malloc(sizeof(list_t));
-	if (ptr == NULL)
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
 		return (NULL);
-
+	
 	new_str = strdup(str);
 	if (new_str == NULL)
 	{
-		free(tmp);
+		free(new_node);
 		return (NULL);
 	}
-	while (new_str[count] != 0)
-		count++;
-	tmp->str = new_str;
-	tmp->len = count;
-	tmp->next = NULL;
+	len = strlen(str);
+	new_node->str = new_str;
+	new_node->len = len;
+	new_node->next = NULL;
 
-	while (ptr->next != NULL)
+	if (*head == NULL)
 	{
-		ptr = ptr->next;
+		*head = new_node;
+		return (*head);
 	}
-	ptr->next = tmp;
+	ptr = *head;
+	while (ptr->next != NULL)
+		ptr = ptr->next;
+	ptr->next = new_node;
 
 	return (ptr);
 }
