@@ -18,8 +18,6 @@ int get_bit(unsigned long int n, unsigned int index)
 		count++;
 		number = number >> 1;
 	}
-	if (index > count)
-		return (-1);
 	number = n;
 	j = count - 1;
 	for (i = (count - 1); i >= 0; i--, j--)
