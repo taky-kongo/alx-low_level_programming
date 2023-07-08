@@ -20,7 +20,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	}
 	*n = temp;
 
-	if ((index > (count - 1)) && (index < 32))
+	if (index > 63)
 	{
 		return (-1);
 	}
