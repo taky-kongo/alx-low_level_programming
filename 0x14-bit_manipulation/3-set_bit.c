@@ -21,7 +21,12 @@ int set_bit(unsigned long int *n, unsigned int index)
 	*n = temp;
 
 	if ((index > (count - 1)) && (index < 32))
+	{
 		return (-1);
-	*n = ((1 << index) ^ *n);
-	return (1);
+	}
+	else
+	{
+		*n = ((1 << index) ^ *n);
+		return (1);
+	}
 }
