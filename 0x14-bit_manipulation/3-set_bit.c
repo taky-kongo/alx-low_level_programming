@@ -22,7 +22,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	}
 	*n = temp;
 
-	if ((count - 1) > index)
+	if ((count - 1) > index && (index < 32))
 	{
 		i = count - 1;
 		for (j = (count_j - 1); j >= 0; j--, i--)
@@ -36,7 +36,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	else if ((count - 1) == index)
 	{
 		*n = ((*n >> index) & 1);
-		for (j = (int)index; j >= 0; j--)
+		for (j = (int)(index - 1); j >= 0; j--)
 			*n = ((*n >> j) & 1);
 	}
 	else
