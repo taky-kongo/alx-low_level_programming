@@ -19,9 +19,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 	fd = open(filename, O_RDONLY);
-
+	if (fd == 0)
+		return (0);
 	read_int = read(fd, buffer, letters);
 	write(1, buffer, read_int);
+
 	close(fd);
 	return (read_int);
 }
