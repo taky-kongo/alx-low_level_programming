@@ -16,12 +16,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	unsigned int fd;
 	unsigned int read_int;
 
-	if (filename == NULL || letters == 0)
+	if (filename == NULL)
 		return (0);
 	fd = open(filename, O_RDONLY);
 
 	read_int = read(fd, buffer, letters);
-	write(1, buffer, read_int);
+	if (letters != 0)
+		write(1, buffer, read_int);
 
 	close(fd);
 	return (read_int);
