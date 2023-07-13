@@ -12,7 +12,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char buffer[1024];
+	char *buffer;
 	unsigned int fd;
 	unsigned int read_int;
 
@@ -21,6 +21,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd = open(filename, O_RDONLY);
 	if (fd != 0 && fd != 3)
 		return (0);
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
+		return (NULL);
 	read_int = read(fd, buffer, letters);
 
 	write(STDOUT_FILENO, buffer, read_int);
