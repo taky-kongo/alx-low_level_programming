@@ -21,7 +21,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd = open(filename, O_RDONLY);
 	if (fd != 0 && fd != 3)
 		return (0);
-	buffer = malloc(sizeof(char) * letters);
+	buffer = malloc(sizeof(char) * (letters));
 	if (buffer == NULL)
 		return (0);
 	read_int = read(fd, buffer, letters);
