@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
-		return (NULL);
+		return (0);
 	read_int = read(fd, buffer, letters);
 
 	write(STDOUT_FILENO, buffer, read_int);
