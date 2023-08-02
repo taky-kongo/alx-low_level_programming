@@ -15,3 +15,10 @@ This repository is intended for use in learning ALX C programming.
 0x06-pointers_arrays_strings: In this project, we see more arrays, strings and pointers.
 
 0x07-pointers_arrays_strings: In this project, we see pointers to pointers, two-dimensional arrays and how to manipulate them and find their address.
+
+0x08-recursion: In this project, we see:
+
+	* What is recursion
+	* How to implement recursion
+	* In what situations you should implement recursion
+	* In what situations you shouldn’t implement recursion
