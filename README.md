@@ -22,3 +22,8 @@ This repository is intended for use in learning ALX C programming.
 	* How to implement recursion
 	* In what situations you should implement recursion
 	* In what situations you shouldn’t implement recursion
+
+0x09-static_libraries: In this project, we see:
+
+	* What is a static library, how does it work, how to create one, and how to use it
+	* Basic usage of ar, ranlib, nm
