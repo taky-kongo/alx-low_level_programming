@@ -1,5 +1,5 @@
-#ifndef __FUNCTION__
-#define __FUNCTION__
+#ifndef __FUNCTION_H__
+#define __FUNCTION_H__
 
 #define ABS(x) ((x) < 0 ? -(x) : (x))
 
