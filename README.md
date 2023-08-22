@@ -62,3 +62,9 @@ This repository is intended for use in learning ALX C programming.
 	* What are function pointers and how to use them
 	* What does a function pointer exactly hold
 	* Where does a function pointer point to in the virtual memory
+
+0x10-variadic_functions: In this project, we see:
+
+	* What are variadic functions
+	* How to use va_start, va_arg and va_end macros
+	* Why and how to use the const type qualifier
