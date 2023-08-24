@@ -16,7 +16,10 @@ list_t *add_node(list_t **head, const char *str)
 	if (ptr == NULL)
 		return (NULL);
 	if (str == NULL)
-		return (NULL);
+	{
+		ptr->str = "(nil)";
+		ptr->len = 0;
+	}
 
 	ptr->str = strdup(str);
 	while (ptr->str[i] != '\0')
