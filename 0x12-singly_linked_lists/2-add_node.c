@@ -15,10 +15,10 @@ list_t *add_node(list_t **head, const char *str)
 	ptr = malloc(sizeof(list_t));
 	if (ptr == NULL)
 		return (NULL);
-	if (str == NULL)
+	if (*head == NULL)
 	{
-		ptr->str = "(nil)";
-		ptr->len = 0;
+		*head = ptr;
+		return (*head);
 	}
 
 	ptr->str = strdup(str);
