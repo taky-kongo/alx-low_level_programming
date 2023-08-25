@@ -33,7 +33,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (tmp == NULL)
 	{
-		tmp = ptr;
+		*head = ptr;
 		return (tmp);
 	}
 	while (tmp->next != NULL)
