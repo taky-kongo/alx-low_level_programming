@@ -31,10 +31,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	ptr->len = i;
 	ptr->next = NULL;
 
-	if (tmp == NULL)
+	if (*head == NULL)
 	{
 		*head = ptr;
-		return (tmp);
+		return (*head);
 	}
 	while (tmp->next != NULL)
 		tmp = tmp->next;
