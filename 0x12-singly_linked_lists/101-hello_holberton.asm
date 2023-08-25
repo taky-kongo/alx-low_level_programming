@@ -1,10 +1,22 @@
-	global	main
-	extern	puts
+; Declare needed C functions
+	extern	printf			; the C function, to be called
 
-	section	.text
-main:					; This is called by the C library startup code
-	mov	rdi, message		; First integer (or pointer) argument in rdi
-	call	puts			; puts(message)
-	ret				; Return from main back into C library wrapper
-message:
-	db	"Hello, Holberton", 0	; Note strings must be terminated with 0 in C
+	section	.data			; Data section, initialized variables
+msg:	db "Hello, Holberton", 0	; C string needs 0
+fmt:	db "%s", 10, 0			; The printf format, "\n",'0'
+
+	section	.text			; Code section.
+
+	global main			; the standard gcc entry point
+main:					; the program label for the entry point
+	push	rbp			; set up stack frame, must be alligned
+
+	mov	rdi,fmt
+	mov	rsi,msg
+	mov	rax,0			; or can be  xor  rax,rax
+	call	printf			; Call C function
+
+	pop	rbp			; restore stack
+
+	mov	rax,0			; normal, no error, return value
+	ret				; return
