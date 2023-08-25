@@ -24,9 +24,8 @@ list_t *add_node_end(list_t **head, const char *str)
 		free(ptr);
 		return (NULL);
 	}
-	while (ptr->str != '\0')
+	while (ptr->str[i] != '\0')
 	{
-		printf("%d\n", i);
 		i++;
 	}
 	ptr->len = i;
@@ -39,7 +38,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	while (tmp->next != NULL)
 		tmp = tmp->next;
-	tmp->next = ptr;
 
+	tmp->next = ptr;
 	return (tmp);
 }
