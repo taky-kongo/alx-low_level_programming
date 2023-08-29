@@ -32,3 +32,8 @@
 
 	* Prototype: int pop_listint(listint_t **head);
 	* if the linked list is empty return 0
+
+8-sum_listint.c: This is a function that add all the data (n) of a listint_t linked list.
+
+	* Prototype: int sum_listint(listint_t *head);
+	* if the list is empty, return 0
