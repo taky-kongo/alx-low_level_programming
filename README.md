@@ -78,3 +78,8 @@ This repository is intended for use in learning ALX C programming.
 
 	* How to use linked lists
 	* Start to look for the right source of information without too much help
+
+0x14-bit_manipulation: In this project, we see:
+
+	* Look for the right source of information without too much help
+	* How to manipulate bits and use bitwise operators
