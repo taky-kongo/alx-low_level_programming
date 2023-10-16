@@ -83,3 +83,13 @@ This repository is intended for use in learning ALX C programming.
 
 	* Look for the right source of information without too much help
 	* How to manipulate bits and use bitwise operators
+
+<h3>0x18-dynamic_libraries</h3>
+In this project, we see:
+
+<ul>
+	<li>What is a dynamic library, how does it work, how to create one, and how to use it</li>
+	<li>What is the environment variable $LD_LIBRARY_PATH and how to use it</li>
+	<li>What are the differences between static and shared libraries</li>
+	<li>Basic usage nm, ldd, ldconfig</li>
+</ul>
